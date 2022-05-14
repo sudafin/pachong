@@ -10,7 +10,6 @@ header = {
 resp = requests.get(url, headers=header)
 dic = resp.json()
 list_dic = {}
-# dicResp1 = dic['data']['list'][0]['pic_infos']['003yHo7Nly1h14i2y66p0j62c0340hdw02']['mw2000']['url']
 j = 0
 for i in range(100):
     try:
@@ -27,5 +26,4 @@ obj = re.compile(r"'mw2000': {'url': (?P<url>.*?), .*?}", re.S)
 for k in list_dic:
     content = obj.finditer(str(list_dic[k]))
     for t in content:
-        print(t.group("url"))
-#
+        print(t.group("url").strip("''"))  # strip是去除 split是切割

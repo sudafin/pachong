@@ -7,7 +7,7 @@ import time
 import cfscrape
 
 scrape = cfscrape.create_scraper(delay=10)
-url = "https://www.pexels.com/zh-cn/search/tokyo/"
+url = "https://www.pexels.com/zh-cn/search/%E5%B9%BF%E5%B7%9E/"
 resp = scrape.get(url)
 
 main_page = BeautifulSoup(resp.text, "html.parser")

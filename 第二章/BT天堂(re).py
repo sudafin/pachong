@@ -2,8 +2,6 @@ import requests
 
 import re
 
-import csv
-
 url = "https://www.ibttt.net"
 resp = requests.get(url)  # 去掉安全验证
 resp.encoding = "utf-8"  # 根据网页自身的编码决定，默认utf-8

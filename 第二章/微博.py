@@ -6,7 +6,7 @@ import re
 
 def Spider_weibo(number, _uid):
     for _page in range(number + 1):
-        if page >= 1:
+        if _page >= 1:
             url = f"https://weibo.com/ajax/statuses/mymblog?uid={_uid}&page={_page}&feature=0"
             header = {
                 "cookie": "SINAGLOBAL=9911472744493.422.1633357276245; UOR=,,www.baidu.com; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9W5OVCbA4Qb.7dyhmHqiDEuB5JpX5KMhUgL.Foqfe0-cehMNeh22dJLoI0qLxKBLBonL1h.LxK-L1-eL1KeLxK.L1KzLBo2LxKML1-2L1hBLxKnLBo2L1hqLxKnL1h-L1K5t; PC_TOKEN=a8672ea6b0; ALF=1684145602; SSOLoginState=1652609601; SCF=AhoZz0nGVTd5U8luAadBGBrprnQJpJMCE5wcKd8R5hcuBAwKi0I1fKShg8rLbk4dniu0_5D2ivjOEJY9hhTDwb0.; SUB=_2A25PhKITDeRhGeBL6FcX8CnLyz2IHXVs85TbrDV8PUNbmtAfLWn4kW9NRwv9AA5VVpJz9XVYHuJEZkqeZfNrJuHN; XSRF-TOKEN=xNRurhqU5GnZy5Q4y6KAM_P0; _s_tentry=weibo.com; Apache=5333158291038.376.1652609612912; ULV=1652609612949:52:6:1:5333158291038.376.1652609612912:1652543339517; WBPSESS=d6rd5Cp7E3_icjTnxpdvreUFMPhvUCIoZkbwGWGO-sFakLG7LRgt2pjcs71kMNC634dvIEFTjLh9oeXeb9QzLe0Kmbd75oEga148eqgFjUhAQHLEspzVQeAIO3N_s2IuK5gHKo6gkXn1VbPBU9VJjA==",
